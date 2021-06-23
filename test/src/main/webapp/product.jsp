@@ -1,10 +1,9 @@
-<%@page import="dao.ProductRepository"%>
 <%@ page contentType="text/html; charset=utf-8"%>
 <%@ page import="dto.Product"%>
-<jsp:useBean id="productDAO" class="dao.ProductRepository" scope="session" />
+<%@ page import="dao.ProductRepository"%>
 <html>
 <head>
-<link rel="stylesheet" 	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link rel ="stylesheet" href ="./resources/css/bootstrap.min.css" />
 <title>상품 상세 정보</title>
 </head>
 <body>
@@ -15,14 +14,14 @@
 		</div>
 	</div>
 	<%
-	String id = request.getParameter("id");
-	ProductRepository dao = ProductRepository.getInstance();
-	Product product = dao.getProductById(id);
+		String id = request.getParameter("id");
+		ProductRepository dao = ProductRepository.getInstance();
+		Product product = dao.getProductById(id);
 	%>
 	<div class="container">
 		<div class="row">
-			<div class="col-md-5">
-				<img src="C:/upload/<%=product.getFilename()%>" style="width: 100%"/>
+			<div class ="col-md-5">
+				<img src="c:/upload/<%=product.getFilename()%>" style="width: 100%" />
 			</div>
 			<div class="col-md-6">
 				<h3><%=product.getPname()%></h3>

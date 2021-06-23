@@ -8,11 +8,12 @@ public class ProductRepository {
 
 	private ArrayList<Product> listOfProducts = new ArrayList<Product>();
 	private static ProductRepository instance = new ProductRepository();
-	
-	public static ProductRepository getInstance() {
+
+	public static ProductRepository getInstance(){
 		return instance;
-	}
-	
+	} 
+
+
 	public ProductRepository() {
 		Product phone = new Product("P1234", "iPhone 6s", 800000);
 		phone.setDescription("4.7-inch, 1334X750 Renina HD display, 8-megapixel iSight Camera");
