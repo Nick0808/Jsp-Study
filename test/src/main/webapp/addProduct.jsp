@@ -9,6 +9,7 @@
 	<jsp:include page="menu2.jsp" />	
 	<div class="jumbotron">
 		<div class="container">
+		<a href="logout.jsp" class="btn btn-sm btn-success pull-right">logout</a>
 			<h1 class="display-3">상품 등록</h1>
 		</div>
 	</div>
